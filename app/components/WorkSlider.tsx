@@ -29,10 +29,10 @@ export default function WorkSlider() {
         <div className="flex justify-between items-center mb-16">
           <h2 className="text-5xl md:text-7xl font-black uppercase">Our Work</h2>
           <div className="flex gap-4">
-            <button className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center hover:bg-accent hover:text-black transition-all">
+            <button className="w-12 h-12 bg-primary rounded-md flex items-center justify-center hover:bg-accent hover:text-black transition-all">
               <ArrowLeft size={24} />
             </button>
-            <button className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center hover:bg-accent hover:text-black transition-all">
+            <button className="w-12 h-12 bg-primary rounded-md flex items-center justify-center hover:bg-accent hover:text-black transition-all">
               <ArrowRight size={24} />
             </button>
           </div>
@@ -61,7 +61,7 @@ export default function WorkSlider() {
         </div>
 
         <div className="flex justify-end mt-8">
-          <button className="bg-accent text-black font-black py-4 px-10 rounded-full text-sm uppercase tracking-widest hover:bg-white transition-all shadow-xl">
+          <button className="bg-accent text-black font-black py-4 px-10 rounded-md text-sm uppercase tracking-widest hover:bg-white transition-all shadow-xl btn-premium">
             View all works
           </button>
         </div>

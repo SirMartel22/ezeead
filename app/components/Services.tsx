@@ -22,7 +22,7 @@ export default function Services() {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="bg-accent text-black font-black py-4 px-10 rounded-full text-sm uppercase tracking-widest flex items-center gap-4 hover:bg-white transition-all shadow-xl"
+          className="bg-accent text-black font-black py-4 px-10 rounded-lg text-sm uppercase tracking-widest flex items-center gap-4 hover:bg-white transition-all shadow-xl btn-premium"
         >
           View our services
           <ArrowRight size={20} />

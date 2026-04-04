@@ -9,17 +9,19 @@ import FooterCTA from "./components/FooterCTA";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen bg-dark">
-      <Navbar />
-      <Hero />
-      <div className="relative z-20 bg-white">
-        <Partners />
-        <IntroVideo />
-        <Services />
-        <WorkSlider />
-        <NewsFeed />
-        <FooterCTA />
-      </div>
-    </main>
+    <div className="main-layout">
+      <main className="relative min-h-screen">
+        <Navbar />
+        <Hero />
+        <div className="relative z-20">
+          <Partners />
+          <IntroVideo />
+          <Services />
+          <WorkSlider />
+          <NewsFeed />
+          <FooterCTA />
+        </div>
+      </main>
+    </div>
   );
 }

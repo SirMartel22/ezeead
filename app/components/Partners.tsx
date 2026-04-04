@@ -9,7 +9,7 @@ const logos = [
 
 export default function Partners() {
   return (
-    <section className="py-12 bg-primary border-t border-white/10 overflow-hidden">
+    <section className="py-12 bg-white overflow-hidden">
       <div className="flex whitespace-nowrap overflow-hidden">
         <motion.div
           animate={{ x: "-50%" }}
@@ -19,7 +19,7 @@ export default function Partners() {
           {[...logos, ...logos].map((logo, index) => (
             <span
               key={index}
-              className="text-white/60 text-2xl font-black uppercase tracking-widest hover:text-white transition-colors cursor-pointer"
+              className="text-black/40 text-2xl font-black uppercase tracking-widest hover:text-black transition-colors cursor-pointer"
             >
               {logo}
             </span>

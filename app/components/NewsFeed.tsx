@@ -24,10 +24,10 @@ export default function NewsFeed() {
         <div className="flex justify-between items-center mb-16">
           <h2 className="text-5xl md:text-7xl font-black uppercase">News</h2>
           <div className="flex gap-4">
-            <button className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center hover:bg-accent hover:text-black transition-all">
+            <button className="w-12 h-12 bg-primary rounded-md flex items-center justify-center hover:bg-accent hover:text-black transition-all">
               <ArrowLeft size={24} />
             </button>
-            <button className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center hover:bg-accent hover:text-black transition-all">
+            <button className="w-12 h-12 bg-primary rounded-md flex items-center justify-center hover:bg-accent hover:text-black transition-all">
               <ArrowRight size={24} />
             </button>
           </div>

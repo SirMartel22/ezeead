@@ -27,25 +27,25 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-accent font-bold mb-4 text-sm"
+          className="text-accent font-bold mb-4 text-xs tracking-[0.2em] uppercase"
         >
           (MarkHack awards—2025)
         </motion.p>
-        <div className="h-48 md:h-64 relative">
+        <div className="h-48 md:h-80 relative">
           <AnimatePresence mode="wait">
             <motion.h1
               key={index}
-              initial={{ opacity: 0, y: 40 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -40 }}
-              transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-              className="text-5xl md:text-8xl font-black leading-tight absolute w-full"
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="text-6xl md:text-9xl font-black leading-[0.9] absolute w-full tracking-tighter"
             >
               {headlines[index]}
             </motion.h1>
           </AnimatePresence>
         </div>
-        <div className="w-full h-[1px] bg-white/20 mt-12 mb-8" />
+        <div className="w-2/3 h-[1px] bg-white/30 mt-16 mb-8" />
       </div>
     </section>
   );

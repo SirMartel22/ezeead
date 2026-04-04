@@ -32,45 +32,45 @@ const Twitter = ({ size = 20, className = "" }) => (
 
 export default function FooterCTA() {
   return (
-    <footer className="py-24 px-12 bg-white text-dark">
+    <footer className="py-24 px-12 bg-black text-white">
       <div className="max-w-6xl mx-auto flex flex-col gap-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          <a href="#" className="font-bold text-sm uppercase tracking-widest hover:text-primary transition-colors">About Us</a>
-          <a href="#" className="font-bold text-sm uppercase tracking-widest hover:text-primary transition-colors">Works</a>
-          <a href="#" className="font-bold text-sm uppercase tracking-widest hover:text-primary transition-colors">Contact Us</a>
-          <a href="#" className="font-bold text-sm uppercase tracking-widest hover:text-primary transition-colors">News</a>
+        {/* Top Navbar in Footer */}
+        <div className="flex flex-col md:flex-row justify-between items-center py-8 border-b border-white/10 gap-8">
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+              <span className="text-black font-black text-xs">DA</span>
+            </div>
+            <span className="font-black text-lg tracking-tighter">DYNASTY AFRICA</span>
+          </div>
+          <div className="flex gap-8">
+            <a href="#" className="font-bold text-xs uppercase tracking-[0.2em] hover:text-accent transition-colors">About Us</a>
+            <a href="#" className="font-bold text-xs uppercase tracking-[0.2em] hover:text-accent transition-colors">Works</a>
+            <a href="#" className="font-bold text-xs uppercase tracking-[0.2em] hover:text-accent transition-colors">Contact Us</a>
+            <a href="#" className="font-bold text-xs uppercase tracking-[0.2em] hover:text-accent transition-colors">News</a>
+          </div>
         </div>
 
-        <div className="relative p-12 bg-primary rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row items-center justify-between gap-12 group cursor-pointer">
+        {/* CTA Box */}
+        <div className="relative p-12 bg-primary rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row items-center justify-between gap-12 group cursor-pointer clip-hero">
           <div className="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-full blur-3xl -mr-32 -mt-32 transition-colors group-hover:bg-accent/40" />
-          <h2 className="text-4xl md:text-6xl font-black text-white leading-tight uppercase relative z-10">
+          <h2 className="text-5xl md:text-7xl font-black text-white leading-none uppercase relative z-10 tracking-tighter">
             Want to do <br /> Powerful <br /> things?
           </h2>
-          <div className="flex flex-col items-center gap-8 relative z-10 w-full md:w-auto">
+          <div className="flex flex-col items-center md:items-end gap-12 relative z-10 w-full md:w-auto">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-accent text-black font-black py-4 px-10 rounded-full text-sm uppercase tracking-widest hover:bg-white transition-all shadow-xl"
+              className="bg-accent text-black font-black py-4 px-10 rounded-md text-sm uppercase tracking-widest hover:bg-white transition-all shadow-xl btn-premium"
             >
               Get started
             </motion.button>
-            <div className="flex gap-6 mt-8">
+            <div className="flex gap-8">
               <Instagram size={20} className="text-white hover:text-accent cursor-pointer transition-colors" />
               <Facebook size={20} className="text-white hover:text-accent cursor-pointer transition-colors" />
               <Youtube size={20} className="text-white hover:text-accent cursor-pointer transition-colors" />
               <Twitter size={20} className="text-white hover:text-accent cursor-pointer transition-colors" />
             </div>
           </div>
-        </div>
-
-        <div className="flex justify-between items-center pt-12 border-t border-dark/10">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-dark rounded-full flex items-center justify-center">
-              <span className="text-white font-black text-xs">DA</span>
-            </div>
-            <span className="font-black text-lg tracking-tighter">DYNASTY AFRICA</span>
-          </div>
-          <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">© 2025 Dynasty Africa. All rights reserved.</p>
         </div>
       </div>
     </footer>
